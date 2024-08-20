@@ -1,0 +1,297 @@
+@font-face {
+ font-family: 'Changa';
+ src: url(/fonts/newfont.woff2) format('woff2');
+ unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   direction: rtl;
+   font-family: 'Changa';
+}
+
+body{
+   background: #FFF;
+}
+
+:root {
+  --background: #e9a9d5;
+}
+
+header{
+   width: 100%;
+   padding: 3px;
+   background-color: var(--background);
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+header img{
+   width: 50px;
+   height: 50px;
+}
+
+header .icon{
+   width: 45px;
+   height: 45px;
+   padding: 3px;
+   background-color: #ffffff;
+   border-radius: 5px;
+}
+
+header .icon div{
+   width: 40px;
+   height: 5px;
+   background-color: var(--background);
+   margin: 6px auto;
+   border-radius: 5px;
+}
+
+header h1,img,.icon{
+   margin: 5px;
+}
+
+.descr{
+   width: 100%;
+   text-align: center;
+   margin-top: 20px;
+   padding: 5px;
+}
+
+.descr p span{
+   font: 30px bold;
+   color: var(--background);
+}
+
+.descr p{
+   font-size: 20px;
+}
+
+.descr .toolsman{
+   width: 100%;
+}
+.descr .toolsman div{
+   width: 45%;
+   display: inline-block;
+   margin: 5px;
+}
+.descr .toolsman img{
+   width: 120%;
+   animation: img 0.5s ease-out;
+}
+
+@keyframes img{
+   0%{
+      transform: translateX(100px)
+   }
+   100%{
+      
+   }
+}
+
+.descr .toolsman h4{
+   font-size: 50px;
+   color: var(--background);
+}
+
+.rows{
+   text-align: center;
+   width: 100%;
+}
+.rows .row{
+   width: 40%;
+   height: 100px;
+   padding: 5px;
+   margin: 5px;
+   background-color: var(--background);
+   color: #ffffff;
+   border-radius: 5px;
+   display: inline-block;
+   font-size: 130%;
+   transition: 0.5s;
+  }
+  
+.row:hover{
+   transform: scale(1.1);
+   background-color: white;
+   color: var(--background);
+   border: solid 1px var(--background);
+   box-shadow: 1px 1px 10px gray
+}
+  
+.anme{
+   animation: anmes 0.6s ease-out;
+}
+
+@keyframes anmes{
+ 0%{
+    transform: scale(0.2)
+ }
+ 100%{
+    transform: scale(1)
+ }
+}
+
+.contact{
+   width: 100%;
+   text-align: center;
+}
+
+.contact div{
+   width: 80%;
+   margin: 5px auto;
+   color: var(--background);
+   border: solid 1px var(--background);
+   border-radius: 5px;
+   padding: 5px;
+   transition: 0.4s;
+}
+
+.in{
+   animation: in 0.8s ease-out;
+}
+
+.out{
+   animation: out 0.8s ease-out 0.2s;
+}
+
+@keyframes out{
+   0%{transform: translateX(550px)}
+}
+@keyframes in{
+   0%{transform: translateX(550px)}
+}
+
+.contact div:hover{
+   background-color: var(--background);
+   color: white;
+   transform: scale(1.1);
+      box-shadow: 1px 1px 10px gray
+}
+
+footer{
+   width: 100%;
+   padding: 5px;
+   text-align: center;
+   background-color: var(--background);
+   color: #ffffff;
+   margin-top: 20px;
+}
+
+.menu{
+   width: 50%;
+   padding: 5px;
+   background-color: var(--background);
+   line-height: 80px;
+   position: absolute;
+   left: 0;
+   display: none;
+   animation: anmes 0.2s ease-out;
+}
+
+.menu nav ul li a{
+   text-decoration: none;
+   color: var(--background);
+}
+
+.menu nav ul li{
+   list-style: none;
+   width: 80%;
+   margin: 10px auto;
+   background-color: #ffffff;
+   border-radius: 5px;
+   text-align: center;
+   font: 120% bold;
+   padding: 5px;
+   
+}
+
+.form{
+   width: 80%;
+   padding: 5px;
+   border-radius: 5px;
+   background-color: var(--background);
+   margin: 5px auto;
+   text-align: center;
+   margin: 30px;
+}
+
+.form input{
+   width: 90%;
+   padding: 5px;
+   border-radius: 5px;
+   outline: none;
+   margin: 15px auto;
+   border: none;
+}
+
+.form input:hover{
+   
+}
+
+.form textarea{
+   width: 90%;
+   height: 100px;
+   border-radius: 5px;
+   outline: none;
+}
+
+.form .but{
+   width: 80%;
+   text-align: right;
+   margin: 2px auto;
+}
+
+.form .but button{
+   width: 40%;
+   padding: 5px;
+   border-radius: 5px;
+   background-color: #ffffff;
+   border: none;
+   outline: none;
+}
+
+.form .but button:hover{
+   background-color: var(--background);
+   border: solid 1px white;
+}
+
+.about{
+   font-size: 20px;
+   padding: 8px;
+   color: var(--background);
+   text-align: left;
+}
+
+@media (min-width: 767px){
+   .descr p{
+      font-size: 40px;
+   }
+   .descr p span{
+      font-size: 55px;
+   }
+   
+   .descr .toolsman div{
+      width: 35%;
+   }
+   
+   .descr .toolsman img{
+      width: 60%;
+   }
+   .descr .toolsman h4{
+      font-size: 400%;
+   }
+   
+   .rows .row{
+      font-size: 180%;
+   }
+   .form {
+      width: 60%;
+   }
+}
+span{
+   font-size: large;
+}
